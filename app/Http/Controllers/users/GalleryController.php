@@ -45,7 +45,7 @@ class GalleryController extends Controller
         $data_upl = date('Y-m-d_H-i-s');
         if(!empty($request->file('modal-foto'))){
             Storage::disk('upl_foto')->put($request->input('foto'), file_get_contents($request->file('modal-foto')));
-            $foto->foto = url('uploads/posts/' . $request->input('foto'));
+            $foto->foto = url($request->input('foto'));
         }
 
         $foto->save();
