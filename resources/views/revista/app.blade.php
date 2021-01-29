@@ -58,7 +58,7 @@
             <div class="col-xs-12 col-lg-4">
                 <div class="footer-brand">
                     <a class="footer-brand" href="#">
-                        <img style="width: 50%;" src="http://10.14.1.21:8000/uploads/posts/foto_2021-01-28_12-44-02.png" alt="">
+                        <img style="width: 50%;" src="http://10.14.1.21:8177/uploads/posts/foto_2021-01-28_12-44-02.png" alt="">
                     </a>
                 </div>
             </div>
@@ -86,7 +86,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-lg-4">
                         <a class="footer-brand" href="#">
-                            <img style="width: 50%;" src="http://10.14.1.21:8000/uploads/posts/foto_2021-01-28_13-04-39.png" alt="">
+                            <img style="width: 50%;" src="http://10.14.1.21:8177/uploads/posts/foto_2021-01-28_13-04-39.png" alt="">
                         </a>
                     </div>
                     <div class="col-xs-12 col-lg-8">

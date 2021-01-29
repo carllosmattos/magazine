@@ -57,11 +57,12 @@
     <div class="col-xs-12 col-sm-12">
         <div class="row">
             @foreach($fotos as $foto)
-            <div class="col-xs-12 col-md-3" style="margin: 15px 0;">
+            <div class="col-xs-12 col-md-12" style="margin: 15px 0;">
                 @if(Auth::user()->level >= 2)
                 <div class="btn-group-vertical" role="group" aria-label="...">
                     <a class="btn btn-primary" onclick="editarFoto('{{$foto->id}}','{{$foto->foto}}','{{$foto->description}}','{{$foto->view}}')">
-                    {{$foto->foto}}
+                    {{$foto->foto}} <br>
+                    {{$foto->id}}
                         <img alt="" src="{{$foto->foto}}" style="width: 150px; height: 135px;">
                     </a>
                     <a class="btn btn-primary" onclick="editarFoto('{{$foto->id}}','{{$foto->foto}}','{{$foto->description}}','{{$foto->view}}')">Visualizar</a>

@@ -33,7 +33,7 @@ $titulo = "Revista Viver São José";
                 @if($spot->foto != null)
                 <img alt="" src="{{$spot->foto}}" style="height: 300px; width: 100%; display: block;">
                 @else
-                <img style="height: 300px; width: 100%; display: block;" src="http://10.14.1.21:8000/uploads/posts/foto_2021-01-26_10-40-57.png" alt="">
+                <img style="height: 300px; width: 100%; display: block;" src="http://10.14.1.21:8177/uploads/posts/foto_2021-01-26_10-40-57.png" alt="">
                 @endif
                 <b style="color: #f00; font-weight: bold;">{{$spot->categorias->name}} | </b>
                 <strong style="color: #000; font-weight: bold;">{{$spot->created_at->diffForHumans()}}</strong> <br>
@@ -54,7 +54,7 @@ $titulo = "Revista Viver São José";
                 @if($post->foto != null)
                 <img alt="" src="{{$post->foto}}" data-holder-rendered="true" style="height: 250px; width: 100%; display: block;">
                 @else
-                <img style="height: 250px; width: 100%; display: block;" src="http://10.14.1.21:8000/uploads/posts/foto_2021-01-26_10-40-57.png" alt="">
+                <img style="height: 250px; width: 100%; display: block;" src="http://10.14.1.21:8177/uploads/posts/foto_2021-01-26_10-40-57.png" alt="">
                 @endif
                 <div class="img-desc">
                     <b style="color: #f00; font-weight: bold;">{{$post->categorias->name}} | <strong class="desc-spotlight-post">{{$post->created_at->diffForHumans()}}</strong></b>
