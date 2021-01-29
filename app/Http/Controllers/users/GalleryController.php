@@ -41,7 +41,13 @@ class GalleryController extends Controller
         $foto = Gallery::find($request->input('id'));
         $foto->description = $request->input('description');
         $foto->view = $request->input('view');
-        $foto->foto = $request->input('link-foto');
+
+        $data_upl = date('Y-m-d_H-i-s');
+        if(!empty($request->file('modal-foto'))){
+            Storage::disk('upl_foto')->put('foto_' . $data_upl . '.png', file_get_contents($request->file('modal-foto')));
+            $foto->foto = url('uploads/posts/' . 'foto_' . $data_upl . '.png');
+        }
+
         $foto->save();
 
         return back()->with('mensagem', 'Foto Atualizada com suscesso!');

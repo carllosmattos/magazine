@@ -61,8 +61,28 @@
                 @if(Auth::user()->level >= 2)
                 <div class="btn-group-vertical" role="group" aria-label="...">
                     <a class="btn btn-primary" onclick="editarFoto('{{$foto->id}}','{{$foto->foto}}','{{$foto->description}}','{{$foto->view}}')">
-                    {{$foto->foto}} <br>
-                    {{$foto->id}}
+                        {{$foto->foto}} <br>
+                        {{$foto->id}}
+                        <div class="col-md-12">
+                            <input style="width: 450px;" name="link-foto" type="text" id="link-foto" value="{{$foto->foto}}" readonly>
+                            <a class="btn btn-success" onclick="copyClipboard()">Copiar link da imagem</a>
+                        </div>
+                        <script type="text/javascript">
+                            function copyClipboard() {
+                                /* Get the text field */
+                                var copyText = document.getElementById("link-foto");
+
+                                /* Select the text field */
+                                copyText.select();
+                                copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+                                /* Copy the text inside the text field */
+                                document.execCommand("copy");
+
+                                /* Alert the copied text */
+                                // alert("Copied the text: " + copyText.value);
+                            }
+                        </script>
                         <img alt="" src="{{$foto->foto}}" style="width: 150px; height: 135px;">
                     </a>
                     <a class="btn btn-primary" onclick="editarFoto('{{$foto->id}}','{{$foto->foto}}','{{$foto->description}}','{{$foto->view}}')">Visualizar</a>
@@ -105,9 +125,9 @@
                     <div class="form-group">
                         <img alt="" id="foto" name="foto" src="" style="width: 100%; height: 600%;">
                     </div>
-                    <div class="col-md-12">
-                        <input style="width: 450px;" name="link-foto" type="text" id="link-foto" value="link-foto" readonly>
-                        <a class="btn btn-success" onclick="copyClipboard()">Copiar link da imagem</a>
+                    <div class="form-group">
+                        <label for="exampleInputFile">Mudar foto:</label>
+                        <input type="file" name="modal-foto" class="form-control">
                     </div>
                     <div class="form-group">
                         <label>Descrição:</label>
@@ -129,22 +149,6 @@
                         @else
                         @endif
                     </div>
-                    <script type="text/javascript">
-                        function copyClipboard() {
-                            /* Get the text field */
-                            var copyText = document.getElementById("link-foto");
-
-                            /* Select the text field */
-                            copyText.select();
-                            copyText.setSelectionRange(0, 99999); /* For mobile devices */
-
-                            /* Copy the text inside the text field */
-                            document.execCommand("copy");
-
-                            /* Alert the copied text */
-                            // alert("Copied the text: " + copyText.value);
-                        }
-                    </script>
                 </div>
             </form>
         </div>
