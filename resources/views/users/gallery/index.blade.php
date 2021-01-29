@@ -61,7 +61,7 @@
                 @if(Auth::user()->level >= 2)
                 <div class="btn-group-vertical" role="group" aria-label="...">
                     <a class="btn btn-primary" onclick="editarFoto('{{$foto->id}}','{{$foto->foto}}','{{$foto->description}}','{{$foto->view}}')">
-                    {{$foto->id}}
+                    {{$foto->foto}}
                         <img alt="" src="{{$foto->foto}}" style="width: 150px; height: 135px;">
                     </a>
                     <a class="btn btn-primary" onclick="editarFoto('{{$foto->id}}','{{$foto->foto}}','{{$foto->description}}','{{$foto->view}}')">Visualizar</a>
