@@ -8,7 +8,7 @@
 
     <title>@yield('title') - Revista Viver São José</title>
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="https://revista.hsj.ce.gov.br/css/app.css" rel="stylesheet">
 
     <!-- Styles -->
 </head>
@@ -24,25 +24,25 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/revista/home"><img style="width: 30%;" src="{{URL::asset('favicon.ico')}}" alt=""></a>
+                <a class="navbar-brand" href="/"><img style="width: 30%;" src="https://revista.hsj.ce.gov.br/favicon.ico" alt=""></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="@yield('home')"><a href="/revista/home">Home</a></li>
-                    <li class="@yield('institucional')"><a href="/revista/institucional">Institucional</a></li>
-                    <li class="@yield('todos')"><a href="/revista/listar-artigos/todos">Artigos</a></li>
+                    <li class="@yield('home')"><a href="/">Home</a></li>
+                    <li class="@yield('institucional')"><a href="/institucional">Institucional</a></li>
+                    <li class="@yield('todos')"><a href="/listar-artigos/todos">Artigos</a></li>
                     <!-- <li class="@yield('galeria')"><a href="/revista/galeria/#galeria-fotos">Galeria</a></li> -->
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Galerias <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="/revista/galeria-arte">Galeria de arte</a></li>
+                            <li><a href="/galeria-arte">Galeria de arte</a></li>
                             <li class="divider"></li>
-                            <li><a href="/revista/galeria-fotos">Galeria de fotos</a></li>
+                            <li><a href="/galeria-fotos">Galeria de fotos</a></li>
                         </ul>
                     </li>
-                    <li class="@yield('regras-da-revista')"><a href="/revista/regras">Submissão de trabalhos</a></li>
+                    <li class="@yield('regras-da-revista')"><a href="/regras">Submissão de trabalhos</a></li>
                 </ul>
             </div>
             </ul>
@@ -58,19 +58,19 @@
             <div class="col-xs-12 col-lg-4">
                 <div class="footer-brand">
                     <a class="footer-brand" href="#">
-                        <img style="width: 50%;" src="http://10.14.1.21:8177/uploads/posts/foto_2021-01-28_12-44-02.png" alt="">
+                        <img style="width: 50%;" src="https://revista.hsj.ce.gov.br/uploads/posts/foto_2021-01-29_18-29-32.png" alt="">
                     </a>
                 </div>
             </div>
             <div class="col-xs-12 col-lg-3 col-md-6 footer-menu">
                 <ul class="footer-menu-item">
                     <h4 style="color: #000; font-weight: 900;">MENU</h4>
-                    <li><a href="/revista/home">HOME</a></li>
-                    <li><a href="/revista/institucional">INSTITUCIONAL</a></li>
-                    <li><a href="/revista/listar-artigos/todos">ARTIGOS</a></li>
-                    <li><a href="#">GALERIA DE ARTE</a></li>
-                    <li><a href="#">GALERIA DE FOTOS</a></li>
-                    <li><a href="#">SUBMISSÃO DE TRABALHOS</a></li>
+                    <li><a href="/home">HOME</a></li>
+                    <li><a href="/institucional">INSTITUCIONAL</a></li>
+                    <li><a href="/listar-artigos/todos">ARTIGOS</a></li>
+                    <li><a href="/galeria-arte">GALERIA DE ARTE</a></li>
+                    <li><a href="/galeria-fotos">GALERIA DE FOTOS</a></li>
+                    <li><a href="/regras">SUBMISSÃO DE TRABALHOS</a></li>
                 </ul>
             </div>
             <div class="col-xs-12 col-lg-5 col-md-6">
@@ -86,7 +86,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-lg-4">
                         <a class="footer-brand" href="#">
-                            <img style="width: 50%;" src="http://10.14.1.21:8177/uploads/posts/foto_2021-01-28_13-04-39.png" alt="">
+                            <img style="width: 50%;" src="https://revista.hsj.ce.gov.br/uploads/posts/foto_2021-01-29_18-29-50.png" alt="">
                         </a>
                     </div>
                     <div class="col-xs-12 col-lg-8">
@@ -100,7 +100,7 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="https://revista.hsj.ce.gov.br/js/app.js"></script>
 </body>
 
 </html>

@@ -8349,6 +8349,19 @@ button.close {
   }
 }
 
+.gallery{
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.expand{
+  position: relative;
+  width: 100%;
+  -webkit-transform:scale(1.2);
+  transform:scale(1.2);
+  z-index: 1000;
+}
+
 .img-desc {
   position: relative;
   padding: 10px;
@@ -8392,8 +8405,12 @@ button.close {
 }
 
 .foot {
-  background-color: rgb(182, 182, 182);
+  background-image: url('https://revista.hsj.ce.gov.br/uploads/posts/foto_2021-01-29_18-29-18.png');
   padding: 30px 0;
+  width: 100%;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
 }
 
 .footer-brand{
@@ -8446,13 +8463,12 @@ button.close {
 
 .copy{
   color: #000;
-  margin-left: 50%;
   font-weight: bold;
 }
 
-.spotlight-content{
+/* .spotlight-content{
   padding: 0 5%;
-}
+} */
 
 .ideals {
   background-image: url('/assets/images/hospital_sao_jose.jpg');
@@ -8477,8 +8493,12 @@ button.close {
 .title-post {
   border-left: 2px solid #f00 !important;
 }
-
 @media (max-width: 1200px) {
+  .post-thumb, .post-content p img{
+    height: auto !important;
+    width: 100% !important;
+  }
+
   .ideals-min{
     display: block;
   }
@@ -8503,3 +8523,15 @@ button.close {
     display: block;
   }
 }
+
+@media (max-width: 993px) {
+  footer img{
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  h2{
+    font-size: 17px;
+  }
+}  

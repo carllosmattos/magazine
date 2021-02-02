@@ -3,7 +3,7 @@ APP_ENV=local
 APP_KEY=base64:wyLS1vk2DYghlQ5qNYK+ttpFrOGBqAyNhDsbX/YTGsc=
 APP_DEBUG=true
 APP_LOG_LEVEL=debug
-APP_URL=http://10.14.1.21:8290
+APP_URL=http://10.14.1.21:8177
 
 LOG_CHANNEL=stack
 
@@ -35,3 +35,56 @@ PUSHER_APP_ID=
 PUSHER_APP_KEY=
 PUSHER_APP_SECRET=
 PUSHER_APP_CLUSTER=mt1
+
+
+
+docker-compose
+version: '3'
+
+services:
+
+  magazine:
+    build: .
+    image: magazine
+    container_name: magazine
+    restart: always
+    environment:
+      DB_CONNECTION: mysql
+      DB_HOST: db
+      DB_PORT: 3306
+      DB_DATABASE: magazine
+      DB_USERNAME: root
+      DB_PASSWORD: root@hsj@2371
+      APP_URL: https://revista.hsj.ce.gov.br
+    volumes:
+      - ./magazine/public:/app/public
+    ports:
+      - 8177:8181
+    depends_on:
+      - db
+  db:
+    image: mysql:5.7
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root@hsj@2371
+      MYSQL_DATABASE: magazine
+    ports:
+      - 3306:3306
+    volumes:
+      - mysqldrive:/var/lib/mysql
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    restart: always
+    ports:
+      - 8190:80
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: root@hsj@2371
+    depends_on:
+      - db
+networks:
+  default:
+volumes: 
+  mysqldrive:

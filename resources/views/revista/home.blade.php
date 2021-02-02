@@ -13,12 +13,12 @@ $titulo = "Revista Viver São José";
 <!-- <h1><?php    ?></h1> -->
 
 
-<iframe src="{{ asset('turn/views/index.html') }}" style="width: 100%; height: 550px; overflow: hidden; position: relative; margin-top: -22px; margin-bottom: 10px;" title=""></iframe>
+<iframe src="https://revista.hsj.ce.gov.br//views/index.html" style="width: 100%; height: 550px; overflow: hidden; position: relative; margin-top: -22px; margin-bottom: 10px;" title=""></iframe>
 
 <div class="col-xs-12 col-sm-12">
     <div class="col-xs-12 col-lg-4"></div>
     <div class="col-xs-12 col-lg-4">
-        <a class="col-xs-12 col-lg-12 btn btn-danger" href="/revista/viversj" target="_blank">Abrir revista</a>
+        <a class="col-xs-12 col-lg-12 btn btn-danger" href="/viversj" target="_blank">Abrir revista</a>
     </div>
     <div class="col-xs-12 col-lg-4"></div>
 </div>
@@ -69,7 +69,7 @@ $titulo = "Revista Viver São José";
             </a>
         </div>
         @endforeach
-        <div class="text-left"><a class="btn btn-danger" href="/revista/listar-artigos/todos">Ver mais</a></div>
+        <div class="text-left"><a class="btn btn-danger" href="/listar-artigos/todos">Ver mais</a></div>
         
     </div>
 </div>

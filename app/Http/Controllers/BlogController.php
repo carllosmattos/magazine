@@ -14,12 +14,12 @@ class BlogController extends Controller
         $categorias = Categorias::all();
         $spotlight = $post->where('spotlight', 1)->orderby('created_at', 'asc')->take(3)->get();
         $recent = $post->orderby('created_at', 'asc')->paginate(8);
-        return view('revista/home', compact('recent', 'spotlight', 'categorias'));
+        return view('/home', compact('recent', 'spotlight', 'categorias'));
     }
 
     public function about()
     {
-        return view('revista/institucional');
+        return view('/institucional');
     }
 
     public function listPost(Posts $post, $filtro = null)
@@ -38,7 +38,7 @@ class BlogController extends Controller
             }
         };
         // $list_post = $post->orderby('created_at', 'desc')->paginate(10);
-        return view('revista/listar-artigos', compact('spotlight', 'list_post', 'categorias'));
+        return view('/listar-artigos', compact('spotlight', 'list_post', 'categorias'));
     }
 
     public function viewPost($id)
@@ -53,28 +53,28 @@ class BlogController extends Controller
         }
 
 
-        return view('revista/artigo', compact('artigos', 'categorias', 'related'));
+        return view('artigo', compact('artigos', 'categorias', 'related'));
     }
 
     public function viewMagazine()
     {
-        return view('revista/viversj');
+        return view('/viversj');
     }
 
     public function artViewer()
     {
         $fotos = Gallery::paginate(20);
-        return view('revista/galeria-arte');
+        return view('/galeria-arte');
     }
 
     public function photoViewer()
     {
         $fotos = Gallery::paginate(20);
-        return view('revista/galeria-fotos', compact('fotos'));
+        return view('/galeria-fotos', compact('fotos'));
     }
 
     public function rules()
     {
-        return view('revista/regras');
+        return view('/regras');
     }
 }

@@ -12,14 +12,25 @@
 */
 
 
-Route::get('/revista/home', 'BlogController@index');
-Route::get('/revista/institucional', 'BlogController@about')->name('institucional.add');
-Route::get('/revista/listar-artigos/{filtro?}', 'BlogController@listPost')->name('listar-artigos.add');
-Route::get('/revista/artigo/{id}', 'BlogController@viewPost')->name('viewPost.add');
-Route::get('/revista/viversj', 'BlogController@viewMagazine')->name('viewMagazine.add');
-Route::get('/revista/galeria-fotos', 'BlogController@photoViewer')->name('photoViewer.add');
-Route::get('/revista/galeria-arte', 'BlogController@artViewer')->name('artViewer.add');
-Route::get('/revista/regras', 'BlogController@rules');
+Route::get('/', 'BlogController@index');
+Route::get('/institucional', 'BlogController@about')->name('institucional.add');
+Route::get('/listar-artigos/{filtro?}', 'BlogController@listPost')->name('listar-artigos.add');
+Route::get('/artigo/{id}', 'BlogController@viewPost')->name('viewPost.add');
+Route::get('/viversj', 'BlogController@viewMagazine')->name('viewMagazine.add');
+Route::get('/galeria-fotos', 'BlogController@photoViewer')->name('photoViewer.add');
+Route::get('/galeria-arte', 'BlogController@artViewer')->name('artViewer.add');
+Route::get('/regras', 'BlogController@rules');
+
+
+
+// Route::get('/revista/home', 'BlogController@index');
+// Route::get('/revista/institucional', 'BlogController@about')->name('institucional.add');
+// Route::get('/revista/listar-artigos/{filtro?}', 'BlogController@listPost')->name('listar-artigos.add');
+// Route::get('/revista/artigo/{id}', 'BlogController@viewPost')->name('viewPost.add');
+// Route::get('/revista/viversj', 'BlogController@viewMagazine')->name('viewMagazine.add');
+// Route::get('/revista/galeria-fotos', 'BlogController@photoViewer')->name('photoViewer.add');
+// Route::get('/revista/galeria-arte', 'BlogController@artViewer')->name('artViewer.add');
+// Route::get('/revista/regras', 'BlogController@rules');
 
 Auth::routes();
 

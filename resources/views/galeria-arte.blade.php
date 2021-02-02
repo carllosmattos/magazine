@@ -25,8 +25,8 @@
                 <!-- ########################################### -->
                 <div style="margin-bottom: 30px;" class="col-xs-12 col-md-12">
                     <div class="col-xs-12 col-md-6">
-                        <a href="http://10.14.1.21:8177/uploads/posts/foto_2021-02-01_10-33-06.png" target="_blank">
-                            <img src="http://10.14.1.21:8177/uploads/posts/foto_2021-02-01_10-33-06.png" alt="Espilicute" class="img-thumbnail gallery">
+                        <a href="https://revista.hsj.ce.gov.br/uploads/posts/foto_2021-02-01_10-33-06.png" target="_blank">
+                            <img src="https://revista.hsj.ce.gov.br/uploads/posts/foto_2021-02-01_10-33-06.png" alt="Espilicute" class="img-thumbnail gallery">
                         </a>
                     </div>
                     <div class="col-xs-12 col-md-6">
@@ -103,8 +103,8 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-4">
-                        <a href="http://10.14.1.21:8177/uploads/posts/foto_2021-02-01_10-39-30.png" target="_blank">
-                            <img src="http://10.14.1.21:8177/uploads/posts/foto_2021-02-01_10-39-30.png" alt="Espilicute" class="img-thumbnail gallery">
+                        <a href="https://revista.hsj.ce.gov.br/uploads/posts/foto_2021-02-01_10-39-30.png" target="_blank">
+                            <img src="https://revista.hsj.ce.gov.br/uploads/posts/foto_2021-02-01_10-39-30.png" alt="Espilicute" class="img-thumbnail gallery">
                         </a>
                     </div>
                 </div>
@@ -120,15 +120,15 @@
                 <!-- ########################################### -->
                 <div class="col-xs-12 col-md-12">
                     <div class="col-xs-12 col-md-6">
-                        <a href="http://10.14.1.21:8177/uploads/posts/foto_2021-02-01_10-32-32.png" target="_blank">
-                            <img src="http://10.14.1.21:8177/uploads/posts/foto_2021-02-01_10-32-32.png" alt="Espilicute" class="img-thumbnail gallery">
+                        <a href="https://revista.hsj.ce.gov.br/uploads/posts/foto_2021-02-01_10-32-32.png" target="_blank">
+                            <img src="https://revista.hsj.ce.gov.br/uploads/posts/foto_2021-02-01_10-32-32.png" alt="Espilicute" class="img-thumbnail gallery">
                         </a>
                     </div>
                     <div class="col-xs-12 col-md-2">
                     </div>
                     <div class="col-xs-12 col-md-4">
-                        <a href="http://10.14.1.21:8177/uploads/posts/foto_2021-02-01_10-32-10.png" target="_blank">
-                            <img src="http://10.14.1.21:8177/uploads/posts/foto_2021-02-01_10-32-10.png" alt="Espilicute" class="img-thumbnail gallery">
+                        <a href="https://revista.hsj.ce.gov.br/uploads/posts/foto_2021-02-01_10-32-10.png" target="_blank">
+                            <img src="https://revista.hsj.ce.gov.br/uploads/posts/foto_2021-02-01_10-32-10.png" alt="Espilicute" class="img-thumbnail gallery">
                         </a>
                     </div>
                     <div align="center">
@@ -143,8 +143,8 @@
                 <!-- ########################################### -->
                 <div class="col-xs-12 col-md-12">
                     <div class="col-xs-12 col-md-6">
-                        <a href="http://10.14.1.21:8177/uploads/posts/foto_2021-02-01_10-39-53.png" target="_blank">
-                            <img src="http://10.14.1.21:8177/uploads/posts/foto_2021-02-01_10-39-53.png" alt="Espilicute" class="img-thumbnail gallery">
+                        <a href="https://revista.hsj.ce.gov.br/uploads/posts/foto_2021-02-01_10-39-53.png" target="_blank">
+                            <img src="https://revista.hsj.ce.gov.br/uploads/posts/foto_2021-02-01_10-39-53.png" alt="Espilicute" class="img-thumbnail gallery">
                         </a>
                         <div align="center">
                             <strong style="color: red;">Iana Lima Fernandes</strong><br>
