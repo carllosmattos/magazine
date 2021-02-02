@@ -8,6 +8,7 @@ services:
     container_name: magazine
     restart: always
     environment:
+      APP_DEBUG: 'false'
       DB_CONNECTION: mysql
       DB_HOST: db
       DB_PORT: 3306
@@ -18,7 +19,7 @@ services:
     volumes:
       - ./magazine/public:/app/public
     ports:
-      - 8177:8181
+      - 8177:8182
     depends_on:
       - db
   db:
