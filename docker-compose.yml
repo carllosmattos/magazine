@@ -19,7 +19,7 @@ services:
     volumes:
       - ./magazine/public:/app/public
     ports:
-      - 8177:8182
+      - 8178:8182
     depends_on:
       - db
   db:
