@@ -13,7 +13,7 @@ $titulo = "Revista Viver São José";
 <!-- <h1><?php    ?></h1> -->
 
 
-<iframe src="https://revista.hsj.ce.gov.br/turn/views/index.html" style="width: 100%; height: 550px; overflow: hidden; position: relative; margin-top: -22px; margin-bottom: 10px;" title=""></iframe>
+<iframe src="{{URL::asset('turn/views/index.html')}}" style="width: 100%; height: 550px; overflow: hidden; position: relative; margin-top: -22px; margin-bottom: 10px;" title=""></iframe>
 
 <div class="col-xs-12 col-sm-12">
     <div class="col-xs-12 col-lg-4"></div>
@@ -33,7 +33,7 @@ $titulo = "Revista Viver São José";
                 @if($spot->foto != null)
                 <img alt="" src="{{$spot->foto}}" style="height: 300px; width: 100%; display: block;">
                 @else
-                <img style="height: 300px; width: 100%; display: block;" src="https://revista.hsj.ce.gov.br/uploads/posts/foto_2021-01-29_14-20-35.png" alt="">
+                <img style="height: 300px; width: 100%; display: block;" src="{{URL::asset('uploads/posts/foto_2021-01-29_14-20-35.png')}}" alt="">
                 @endif
                 <b style="color: #f00; font-weight: bold;">{{$spot->categorias->name}} | </b>
                 <strong style="color: #000; font-weight: bold;">{{$spot->created_at->diffForHumans()}}</strong> <br>
@@ -54,7 +54,7 @@ $titulo = "Revista Viver São José";
                 @if($post->foto != null)
                 <img alt="" src="{{$post->foto}}" data-holder-rendered="true" style="height: 250px; width: 100%; display: block;">
                 @else
-                <img style="height: 250px; width: 100%; display: block;" src="https://revista.hsj.ce.gov.br/uploads/posts/foto_2021-01-29_14-20-35.png" alt="">
+                <img style="height: 250px; width: 100%; display: block;" src="{{URL::asset('uploads/posts/foto_2021-01-29_14-20-35.png')}}" alt="">
                 @endif
                 <div class="img-desc">
                     <b style="color: #f00; font-weight: bold;">{{$post->categorias->name}} | <strong class="desc-spotlight-post">{{$post->created_at->diffForHumans()}}</strong></b>

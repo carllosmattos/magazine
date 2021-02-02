@@ -8,7 +8,7 @@
 
     <title>@yield('title') - Revista Viver São José</title>
     <!-- Styles -->
-    <link href="{{asset(css/app.css)}}" rel="stylesheet">
+    <link href="{{URL::asset('css/app.css')}}" rel="stylesheet">
 
     <!-- Styles -->
 </head>
@@ -24,7 +24,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/"><img style="width: 30%;" src="{{asset(favicon.ico)}}" alt=""></a>
+                <a class="navbar-brand" href="/"><img style="width: 30%;" src="{{URL::asset('favicon.ico')}}" alt=""></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -58,7 +58,7 @@
             <div class="col-xs-12 col-lg-4">
                 <div class="footer-brand">
                     <a class="footer-brand" href="#">
-                        <img style="width: 50%;" src="{{asset(uploads/posts/foto_2021-01-29_18-29-32.png)}}" alt="">
+                        <img style="width: 50%;" src="{{URL::asset('uploads/posts/foto_2021-01-29_18-29-32.png')}}" alt="">
                     </a>
                 </div>
             </div>
@@ -86,7 +86,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-lg-4">
                         <a class="footer-brand" href="#">
-                            <img style="width: 50%;" src="{{asste(uploads/posts/foto_2021-01-29_18-29-50.png)}}" alt="">
+                            <img style="width: 50%;" src="{{URL::asset('uploads/posts/foto_2021-01-29_18-29-50.png')}}" alt="">
                         </a>
                     </div>
                     <div class="col-xs-12 col-lg-8">
@@ -100,7 +100,7 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ URL::asset('js/app.js') }}"></script>
 </body>
 
 </html>
