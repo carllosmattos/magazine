@@ -27,7 +27,7 @@
         </div>
         @foreach($list_post as $post)
         <div class="col-xs-12 col-sm-12" style="border-left: #f00 solid 5px; border-bottom: #000 solid 1px; margin: 15px 0;">
-            <a href="{{route('viewPost.add',$post->id)}}" style="color: #000; font-weight: bold;">
+            <a href='{{ env("APP_URL") }}/artigo/{{$post->id}}' style="color: #000; font-weight: bold;">
                 <div class="col-xs-12 col-lg-5">
                     <h2 style="color: #000; font-weight: bold;">{{$post->titulo}}</h2>
                     <p><strong style="color: #f00; font-weight: bold;">{{$post->categorias->name}} </strong>| {{$post->created_at->diffForHumans()}}</p>

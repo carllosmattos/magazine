@@ -8,7 +8,6 @@ use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
-
     /**
      * Bootstrap any application services.
      *
@@ -16,7 +15,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        
+        // if($this->app->environment('production')) {
+        //     $this->app['request']->server->set('HTTPS', true);
+        //     URL::forceScheme('https');
+        // }
     }
 
     /**
@@ -26,6 +28,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        URL :: forceRootUrl (\Config :: get ('app.url'));
+        //
     }
 }

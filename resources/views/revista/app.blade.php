@@ -8,7 +8,7 @@
 
     <title>@yield('title') - Revista Viver São José</title>
     <!-- Styles -->
-    <link href="{{URL::asset('css/app.css')}}" rel="stylesheet">
+    <link href='{{ env("APP_URL") }}/css/app.css' rel="stylesheet">
 
     <!-- Styles -->
 </head>
@@ -24,7 +24,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/"><img style="width: 30%;" src="{{URL::asset('favicon.ico')}}" alt=""></a>
+                <a class="navbar-brand" href="/"><img style="width: 30%;" src='{{ env("APP_URL") }}/favicon.ico' alt=""></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -58,14 +58,14 @@
             <div class="col-xs-12 col-lg-4">
                 <div class="footer-brand">
                     <a class="footer-brand" href="#">
-                        <img style="width: 50%;" src="{{URL::asset('uploads/posts/foto_2021-01-29_18-29-32.png')}}" alt="">
+                        <img style="width: 50%;" src='{{ env("APP_URL") }}/uploads/posts/foto_2021-01-29_18-29-32.png' alt="">
                     </a>
                 </div>
             </div>
             <div class="col-xs-12 col-lg-3 col-md-6 footer-menu">
                 <ul class="footer-menu-item">
                     <h4 style="color: #000; font-weight: 900;">MENU</h4>
-                    <li><a href="/home">HOME</a></li>
+                    <li><a href="/">HOME</a></li>
                     <li><a href="/institucional">INSTITUCIONAL</a></li>
                     <li><a href="/listar-artigos/todos">ARTIGOS</a></li>
                     <li><a href="/galeria-arte">GALERIA DE ARTE</a></li>
@@ -86,7 +86,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-lg-4">
                         <a class="footer-brand" href="#">
-                            <img style="width: 50%;" src="{{URL::asset('uploads/posts/foto_2021-01-29_18-29-50.png')}}" alt="">
+                            <img style="width: 50%;" src='{{ env("APP_URL") }}/uploads/posts/foto_2021-01-29_18-29-50.png' alt="">
                         </a>
                     </div>
                     <div class="col-xs-12 col-lg-8">
@@ -100,7 +100,8 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="{{ URL::asset('js/app.js') }}"></script>
+    <script src='{{ env("APP_URL") }}/js/app.js'></script>
+
 </body>
 
 </html>

@@ -12,8 +12,7 @@ $titulo = "Revista Viver São José";
 
 <!-- <h1><?php    ?></h1> -->
 
-
-<iframe src="{{URL::asset('turn/views/index.html')}}" style="width: 100%; height: 550px; overflow: hidden; position: relative; margin-top: -22px; margin-bottom: 10px;" title=""></iframe>
+<iframe src='{{ env("APP_URL") }}/turn/views/index.html' style="width: 100%; height: 550px; overflow: hidden; position: relative; margin-top: -22px; margin-bottom: 10px;" title=""></iframe>
 
 <div class="col-xs-12 col-sm-12">
     <div class="col-xs-12 col-lg-4"></div>
@@ -29,15 +28,18 @@ $titulo = "Revista Viver São José";
     <div class="row">
         @foreach($spotlight as $spot)
         <div class="col-xs-12 col-md-4" style="margin: 15px 0;">
-            <a href="{{route('viewPost.add',$spot->id)}}">
+            <!-- Teste -->
+            <p style="color: red;">{{ env("APP_URL")}}/artigo/{{$spot->id}}</p>
+
+            <a href='{{ env("APP_URL") }}/artigo/{{$spot->id}}'>
                 @if($spot->foto != null)
                 <img alt="" src="{{$spot->foto}}" style="height: 300px; width: 100%; display: block;">
                 @else
                 <img style="height: 300px; width: 100%; display: block;" src="{{URL::asset('uploads/posts/foto_2021-01-29_14-20-35.png')}}" alt="">
                 @endif
-                <b style="color: #f00; font-weight: bold;">{{$spot->categorias->name}} | </b>
+                <b style="color: #f00; font-weight: bold;">{{$spot->categorias->name}}/artigo/ | </b>
                 <strong style="color: #000; font-weight: bold;">{{$spot->created_at->diffForHumans()}}</strong> <br>
-                <a href="{{route('viewPost.add',$spot->id)}}" class="title-recent-post">{{$spot->titulo}}</a>
+                <a href='{{ env("APP_URL") }}/artigo/{{$spot->id}}' class="title-recent-post">{{$spot->titulo}}</a>
             </a>
         </div>
         @endforeach
@@ -50,7 +52,7 @@ $titulo = "Revista Viver São José";
 
         @foreach($recent as $post)
         <div class="col-xs-12 col-lg-3" style="margin: 15px 0;">
-            <a href="{{route('viewPost.add',$post->id)}}">
+            <a href='{{ env("APP_URL") }}/artigo/{{$post->id}}'>
                 @if($post->foto != null)
                 <img alt="" src="{{$post->foto}}" data-holder-rendered="true" style="height: 250px; width: 100%; display: block;">
                 @else
@@ -59,7 +61,7 @@ $titulo = "Revista Viver São José";
                 <div class="img-desc">
                     <b style="color: #f00; font-weight: bold;">{{$post->categorias->name}} | <strong class="desc-spotlight-post">{{$post->created_at->diffForHumans()}}</strong></b>
                     <br>
-                    <a href="{{route('viewPost.add',$post->id)}}" class="title-spotlight-post">
+                    <a href='{{ env("APP_URL") }}/artigo/{{$post->id}}' class="title-spotlight-post">
                         <?php
                         $texto = substr($post->titulo, 0, strrpos(substr($post->titulo, 0, 60), ' ')) . '...';
                         echo $texto;
@@ -70,7 +72,6 @@ $titulo = "Revista Viver São José";
         </div>
         @endforeach
         <div class="text-left"><a class="btn btn-danger" href="/listar-artigos/todos">Ver mais</a></div>
-        
     </div>
 </div>
 
